@@ -2,7 +2,7 @@
 pipe things over TLS
 
 
-## serevr
+## server
 ```bash
 $ tail -f log.txt | piper 0.0.0.0:8080
 ```
