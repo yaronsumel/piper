@@ -23,7 +23,7 @@ var knockBytes = []byte{83, 79, 83}
 func newServer(laddr string, verbose bool) *server {
 	s, err := ttls.NewTTLSListener(laddr, nil)
 	if err != nil {
-		panic(1)
+		log.Fatalf("[piper::server] %s", err)
 	}
 	return &server{
 		laddr:   laddr,
