@@ -1,7 +1,7 @@
 # piper 
 ###### piper is a small devtool designed to instatly share stdout from process over the secured connection (TLS). 
 
-![](http://i.imgur.com/xFHwmyF.jpg )
+>>>> ![](http://i.imgur.com/xFHwmyF.jpg )
 
 
 #### Installation
@@ -21,3 +21,5 @@ $ piper -a remotehost:8080 > log.txt
 ```
 #### TBD
 * testing
+
+> ##### Written and Maintained by [@YaronSumel](https://twitter.com/yaronsumel) #####
