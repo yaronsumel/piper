@@ -23,6 +23,8 @@ $ tail -f log.txt | piper -a 0.0.0.0:8080
 $ piper -a remotehost:8080 > log.txt
 ```
 
+*add -v to print debug information
+
 TBD
 ------
 * testing
