@@ -1,7 +1,7 @@
 # piper
 pipe things over TLS
 
-![piper](http://i.imgur.com/Kp9zuMn.jpg)
+![piper](http://i.imgur.com/9Mttcxg.jpg)
 
 ## server
 ```bash
