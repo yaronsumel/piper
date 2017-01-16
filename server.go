@@ -1,12 +1,12 @@
 package main
 
 import (
+	"encoding/binary"
 	"github.com/yaronsumel/pipe"
 	"github.com/yaronsumel/ttls"
 	"log"
 	"net"
 	"os"
-	"encoding/binary"
 )
 
 type server struct {
@@ -26,16 +26,16 @@ func newServer(laddr string, verbose bool) *server {
 		panic(1)
 	}
 	return &server{
-		laddr:laddr,
-		storage:newStorage(),
-		ttls:s,
-		pipeEOF:false,
-		verbose:verbose,
+		laddr:   laddr,
+		storage: newStorage(),
+		ttls:    s,
+		pipeEOF: false,
+		verbose: verbose,
 	}
 }
 
 // listen is limited by design to server one client and die
-func (s *server)listen() {
+func (s *server) listen() {
 	go s.pipe()
 	log.Printf("[piper::server] listening on %s", s.laddr)
 	conn, err := s.ttls.Listener.Accept()
@@ -47,7 +47,7 @@ func (s *server)listen() {
 	s.handle(conn)
 }
 
-func (s *server)handle(c net.Conn) {
+func (s *server) handle(c net.Conn) {
 
 	log.Printf("[piper::server] connection accepted from %s", c.RemoteAddr())
 	defer c.Close()
@@ -85,7 +85,7 @@ func (s *server)handle(c net.Conn) {
 	}
 }
 
-func (s *server)pipe() {
+func (s *server) pipe() {
 	StdinChannel := make(pipe.StdDataChannel)
 	go pipe.AsyncRead(pipe.Stdin, bufsize, StdinChannel)
 	for {

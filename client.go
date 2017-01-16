@@ -1,12 +1,12 @@
 package main
 
 import (
-	"crypto/tls"
-	"os"
-	"log"
-	"encoding/binary"
 	"bytes"
+	"crypto/tls"
+	"encoding/binary"
+	"log"
 	"net"
+	"os"
 )
 
 type client struct {
@@ -18,18 +18,18 @@ type client struct {
 
 func newClient(raddr string, verbose bool) *client {
 	c := &client{
-		raddr:raddr,
+		raddr: raddr,
 	}
 	c.startOutputFlag = false
 	c.verboseFlag = verbose
 	return c
 }
 
-func (c *client)dial() (net.Conn) {
+func (c *client) dial() net.Conn {
 	conn, err := tls.Dial("tcp", c.raddr, &tls.Config{
-		InsecureSkipVerify: true,
+		InsecureSkipVerify:       true,
 		PreferServerCipherSuites: true,
-		MinVersion: tls.VersionTLS12,
+		MinVersion:               tls.VersionTLS12,
 	})
 	if err != nil {
 		log.Fatalf("[piper::client] %s", err)
@@ -38,7 +38,7 @@ func (c *client)dial() (net.Conn) {
 	return conn
 }
 
-func (c *client)connect() {
+func (c *client) connect() {
 
 	conn := c.dial()
 	defer conn.Close()

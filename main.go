@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/yaronsumel/pipe"
 	"flag"
+	"github.com/yaronsumel/pipe"
 )
 
 // usage
@@ -24,4 +24,3 @@ func main() {
 	// client mode
 	newClient(*address, *verbose).connect()
 }
-
