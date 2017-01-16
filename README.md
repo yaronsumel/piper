@@ -1,14 +1,23 @@
-# piper
-pipe things over TLS
+# piper 
+###### piper is a small devtool designed to instatly share stdout from process over the secured connection (TLS). 
 
-<img src="http://i.imgur.com/xFHwmyF.jpg" width="80%"/>
+![](http://i.imgur.com/xFHwmyF.jpg )
 
-## server
+
+#### Installation
+```bash
+$ go get github.com/yaronsumel/piper
+```
+#### Usage
+
+##### Server
+when piper used with named piper it will run as server
 ```bash
 $ tail -f log.txt | piper -a 0.0.0.0:8080
 ```
-
-## client
+##### Client
 ```bash
-piper -a 0.0.0.0:8080 > log.txt
+$ piper -a remotehost:8080 > log.txt
 ```
+#### TBD
+* testing
