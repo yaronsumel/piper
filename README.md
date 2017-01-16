@@ -5,21 +5,26 @@
 <img src="http://i.imgur.com/xFHwmyF.jpg" width="500" >
 </p>
 
-#### Installation
+Installation
+------
 ```bash
 $ go get github.com/yaronsumel/piper
 ```
-#### Usage
 
-##### Server
+Usage
+------
+
+###### Server
 ```bash
 $ tail -f log.txt | piper -a 0.0.0.0:8080
 ```
-##### Client
+###### Client
 ```bash
 $ piper -a remotehost:8080 > log.txt
 ```
-#### TBD
+
+TBD
+------
 * testing
 
 > ##### Written and Maintained by [@YaronSumel](https://twitter.com/yaronsumel) #####
