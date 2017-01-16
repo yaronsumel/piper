@@ -1,4 +1,4 @@
-# piper 
+# piper [![Go Report Card](https://goreportcard.com/badge/github.com/yaronsumel/piper)](https://goreportcard.com/report/github.com/yaronsumel/piper) [![GoDoc](https://godoc.org/github.com/yaronsumel/piper?status.svg)](https://godoc.org/github.com/yaronsumel/piper)
 ###### piper is a small devtool designed to instatly share stdout from process over the secured connection (TLS). 
 
 <p align="center">
