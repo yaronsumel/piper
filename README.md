@@ -1,8 +1,9 @@
 # piper 
 ###### piper is a small devtool designed to instatly share stdout from process over the secured connection (TLS). 
 
->>>> ![](http://i.imgur.com/xFHwmyF.jpg )
-
+<p align="center">
+<img src="http://i.imgur.com/xFHwmyF.jpg" width="500" >
+</p>
 
 #### Installation
 ```bash
@@ -11,7 +12,6 @@ $ go get github.com/yaronsumel/piper
 #### Usage
 
 ##### Server
-when piper used with named piper it will run as server
 ```bash
 $ tail -f log.txt | piper -a 0.0.0.0:8080
 ```
