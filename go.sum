@@ -1,0 +1,4 @@
+github.com/yaronsumel/pipe v0.0.0-20170105065201-be78f1279a72 h1:oFT8l9GNQJSNA9vrv8RdCpOwiw+ESI7SBkmogLOOw6M=
+github.com/yaronsumel/pipe v0.0.0-20170105065201-be78f1279a72/go.mod h1:ibPSnQ1AVu42l/0L319uCyqEKmtZyqnB5z2ejfLx0Pc=
+github.com/yaronsumel/ttls v0.0.0-20170105161709-1fcc2b8b1786 h1:fXx+pDIvZ5jMbivXxecwEldOGMiKOLTgCX9/58FTwug=
+github.com/yaronsumel/ttls v0.0.0-20170105161709-1fcc2b8b1786/go.mod h1:ldrGCOyxNhg84/e3R73Lnk0zXHrM7lHVZy8IZaYR3QU=
