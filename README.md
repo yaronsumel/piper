@@ -8,7 +8,7 @@
 Installation
 ------
 ```bash
-$ go get github.com/yaronsumel/piper
+$ export GO111MODULE=on; go get -u -v github.com/yaronsumel/piper
 ```
 
 Usage
